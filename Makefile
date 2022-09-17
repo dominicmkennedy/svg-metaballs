@@ -7,9 +7,10 @@ clean:
 	rm ./metaballs
 
 run:
-	./metaballs 50
 	mkdir -p ./jgrs
 	mkdir -p ./frames
+	./metaballs 50
+	chmod +x jgraph
 	( \
 		i=0; \
 		for F in ./jgrs/*; \
